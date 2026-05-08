@@ -212,6 +212,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 15px;
   margin-top: auto; /* This pushes it to the bottom if you want */
 }
 
@@ -333,8 +334,20 @@ body {
 
 /* Stack on mobile */
 @media (max-width: 768px) {
-  .card-row {
+  .hero-cards {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90vw;
+    max-width: 420px;
+    height: auto;
+    min-height: 500px;
+  }
+
+  .card-body-content {
+    height: auto;
   }
 }
 
