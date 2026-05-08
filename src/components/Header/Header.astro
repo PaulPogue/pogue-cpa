@@ -2,13 +2,12 @@
 import { Image } from 'astro:assets';
 import MainMenu from './MainMenu';
 import Logo from '../../assets/logos/SullivanCurryWhite.png';
-
 import ClientPortalButton from '../buttons/ClientPortalButton.astro';
+import MobileDrawer from '../../components/nav/MobileDrawer';
 ---
 
 <!-- Full-width background wrapper -->
 <div class="w-full bg-[color:var(--firmDarkBlue)] z-50">
-  <!-- Constrained content -->
   <div
     class="container-wide mx-auto flex items-center justify-between p-10 font-light text-xl"
   >
@@ -17,13 +16,18 @@ import ClientPortalButton from '../buttons/ClientPortalButton.astro';
       <Image src={Logo} alt="Sullivan & Curry logo" width={280} height={70} />
     </a>
 
-    <!-- Menu -->
-    <div class="flex items-center gap-6 text-white text-md">
+    <!-- Desktop nav (hidden on mobile) -->
+    <div class="hidden md:flex items-center gap-6 text-white text-md">
       <MainMenu client:load />
       <ClientPortalButton
         href="https://sullivancurry.smartvault.com/"
         buttonClass="bg-[#ebf1ff] text-[var(--firmBlue)]"
       />
+    </div>
+
+    <!-- Mobile hamburger (hidden on desktop) -->
+    <div class="flex md:hidden">
+      <MobileDrawer client:load />
     </div>
   </div>
 </div>
