@@ -351,6 +351,38 @@ body {
   }
 }
 
+/* Footer styling */
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (max-width: 767px) {
+  .footer-grid > div:not(:first-child) {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-grid > div:not(:first-child) > div {
+    width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: start;
+  }
+
+  .footer-grid > div:first-child {
+    grid-column: 1 / 2;
+  }
+}
+
+/******************/
+
 /* SweetAlert2 - site theme */
 .swal2-site-popup {
   border-radius: 24px;
