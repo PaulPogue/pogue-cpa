@@ -1,0 +1,265 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const lastUpdated = 'May 12, 2026';
+const firmName = 'Sullivan & Curry, LLP';
+const firmCity = 'Greenville, Kentucky';
+const contactUrl = '/contact';
+---
+
+<Layout>
+  <section class="py-12">
+    <div class="mx-auto max-w-5xl px-4">
+      <div class="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+        <header class="flex flex-col gap-3">
+          <h1 class="text-4xl font-semibold tracking-tight text-slate-900">
+            Privacy Policy
+          </h1>
+          <p class="text-base text-slate-600 leading-relaxed">
+            {firmName} (transitioning to Pogue & Company CPAs PLLC) is committed
+            to protecting the privacy and confidentiality of our clients and website
+            visitors. This policy explains what information we collect, how we use
+            it, and the steps we take to keep it safe.
+          </p>
+          <p class="text-sm text-slate-500">Last Updated: {lastUpdated}</p>
+        </header>
+
+        <!-- Who We Are -->
+        <section class="mt-10 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200">
+          <h2 class="text-xl font-semibold text-slate-900">Who We Are</h2>
+          <p class="mt-3 text-slate-700 leading-relaxed">
+            {firmName} is a licensed Certified Public Accounting firm located in
+            {firmCity}. We provide tax preparation, accounting, payroll, and
+            related financial services to individuals and businesses. Our
+            professional obligations under federal and state law — including IRS
+            regulations and Kentucky CPA licensing requirements — require us to
+            maintain strict confidentiality of all client information.
+          </p>
+        </section>
+
+        <!-- Information We Collect -->
+        <section class="mt-8 rounded-xl bg-white p-6 ring-1 ring-slate-200">
+          <h2 class="text-xl font-semibold text-slate-900">
+            Information We Collect
+          </h2>
+
+          <p class="mt-3 text-slate-700 font-semibold">From clients:</p>
+          <ul class="mt-2 list-disc pl-5 space-y-2 text-slate-700">
+            <li>Name, address, phone number, and email address</li>
+            <li>
+              Social Security Numbers, EINs, and taxpayer identification numbers
+            </li>
+            <li>
+              Financial records including income, expenses, and asset
+              information
+            </li>
+            <li>
+              Payroll data including employee information and compensation
+              records
+            </li>
+            <li>
+              Bank account and payment information necessary to complete
+              services
+            </li>
+            <li>Prior-year tax returns and supporting documents</li>
+          </ul>
+
+          <p class="mt-5 text-slate-700 font-semibold">
+            From website visitors:
+          </p>
+          <ul class="mt-2 list-disc pl-5 space-y-2 text-slate-700">
+            <li>
+              Information you voluntarily submit through contact or intake forms
+            </li>
+            <li>
+              Basic technical data such as browser type, referring page, and
+              general geographic location, collected automatically through
+              standard web server logs
+            </li>
+          </ul>
+        </section>
+
+        <!-- How We Use Your Information -->
+        <section class="mt-8 rounded-xl bg-white p-6 ring-1 ring-slate-200">
+          <h2 class="text-xl font-semibold text-slate-900">
+            How We Use Your Information
+          </h2>
+          <p class="mt-3 text-slate-700 leading-relaxed">
+            We use the information we collect solely to provide and improve the
+            professional services you have engaged us to perform, which may
+            include:
+          </p>
+          <ul class="mt-3 list-disc pl-5 space-y-2 text-slate-700">
+            <li>Preparing and filing federal and state tax returns</li>
+            <li>Processing payroll and related filings</li>
+            <li>Providing accounting, bookkeeping, and advisory services</li>
+            <li>
+              Communicating with you about your account, deadlines, and
+              deliverables
+            </li>
+            <li>Complying with our legal and professional obligations</li>
+            <li>Responding to inquiries submitted through this website</li>
+          </ul>
+          <p class="mt-4 text-slate-700 leading-relaxed">
+            We do <span class="font-semibold">not</span> sell, rent, or trade your
+            personal information to third parties for marketing or any other commercial
+            purpose.
+          </p>
+        </section>
+
+        <!-- Confidentiality & Disclosure -->
+        <section class="mt-8 rounded-xl bg-white p-6 ring-1 ring-slate-200">
+          <h2 class="text-xl font-semibold text-slate-900">
+            Confidentiality & Permitted Disclosures
+          </h2>
+          <p class="mt-3 text-slate-700 leading-relaxed">
+            As CPAs, we are bound by professional standards and applicable law
+            to keep your information strictly confidential. We will not disclose
+            your information to any third party except in the following limited
+            circumstances:
+          </p>
+          <ul class="mt-3 list-disc pl-5 space-y-2 text-slate-700">
+            <li>With your explicit written consent</li>
+            <li>
+              To government agencies (e.g., IRS, Kentucky DOR) as required by
+              law or as necessary to complete your filings
+            </li>
+            <li>
+              To service providers who assist us in delivering our services
+              (such as our secure document portal), who are bound by
+              confidentiality obligations
+            </li>
+            <li>
+              As required by a valid court order, subpoena, or applicable law
+            </li>
+            <li>
+              To protect against fraud, unauthorized access, or illegal activity
+            </li>
+          </ul>
+        </section>
+
+        <!-- Client Portal & Security -->
+        <section class="mt-8 rounded-xl bg-white p-6 ring-1 ring-slate-200">
+          <h2 class="text-xl font-semibold text-slate-900">
+            Client Portal & Data Security
+          </h2>
+          <p class="mt-3 text-slate-700 leading-relaxed">
+            We use SmartVault, a secure cloud-based document management and
+            client portal platform, to exchange documents with clients.
+            SmartVault employs industry-standard encryption and access controls
+            to protect your files in transit and at rest.
+          </p>
+          <p class="mt-3 text-slate-700 leading-relaxed">
+            Within our firm, access to client data is restricted to authorized
+            personnel on a need-to-know basis. We maintain internal controls
+            including secure networking, password policies, and access
+            management to safeguard the information entrusted to us.
+          </p>
+          <p class="mt-3 text-slate-700 leading-relaxed">
+            While we take all reasonable precautions, no method of electronic
+            transmission or storage is 100% secure. We encourage clients to use
+            our secure portal rather than email when sharing sensitive
+            documents.
+          </p>
+        </section>
+
+        <!-- Cookies & Analytics -->
+        <section class="mt-8 rounded-xl bg-white p-6 ring-1 ring-slate-200">
+          <h2 class="text-xl font-semibold text-slate-900">
+            Cookies & Analytics
+          </h2>
+          <p class="mt-3 text-slate-700 leading-relaxed">
+            Our website may use standard cookies and analytics tools to improve
+            website functionality, monitor traffic, and better understand how
+            visitors interact with our site. These tools do not collect
+            sensitive tax or financial information. You may disable cookies at
+            any time through your browser settings, though doing so may affect
+            certain site functionality.
+          </p>
+        </section>
+
+        <!-- Data Retention -->
+        <section class="mt-8 rounded-xl bg-white p-6 ring-1 ring-slate-200">
+          <h2 class="text-xl font-semibold text-slate-900">Data Retention</h2>
+          <p class="mt-3 text-slate-700 leading-relaxed">
+            We retain client records for the period required by applicable
+            professional standards, IRS guidelines, and Kentucky law — generally
+            a minimum of seven years. Records may be retained longer where
+            required by law or ongoing engagement obligations. Upon expiration
+            of the applicable retention period, records are securely destroyed.
+          </p>
+        </section>
+
+        <!-- Your Rights -->
+        <section class="mt-8 rounded-xl bg-white p-6 ring-1 ring-slate-200">
+          <h2 class="text-xl font-semibold text-slate-900">Your Rights</h2>
+          <p class="mt-3 text-slate-700 leading-relaxed">
+            You have the right to request access to the information we hold
+            about you, to request corrections to inaccurate information, and to
+            ask questions about how your data is used. To make any such request,
+            please contact us using the information below.
+          </p>
+        </section>
+
+        <!-- Changes to This Policy -->
+        <section
+          class="mt-8 rounded-xl bg-[var(--firmLightBlue)]/20 p-6 ring-1 ring-amber-200"
+        >
+          <h2 class="text-xl font-semibold text-slate-900">
+            Changes to This Policy
+          </h2>
+          <p class="mt-3 text-slate-700 leading-relaxed">
+            We may update this Privacy Policy from time to time. When we do, we
+            will revise the "Last Updated" date at the top of this page. We
+            encourage you to review this page periodically. Continued use of our
+            services following any update constitutes your acceptance of the
+            revised policy.
+          </p>
+        </section>
+
+        <!-- Professional Confidentiality Notice -->
+        <div class="mt-8 rounded-lg bg-slate-100 p-4 text-sm text-slate-600">
+          <p class="font-semibold mb-2">Professional Confidentiality Notice</p>
+          <p>
+            All information shared with {firmName} in connection with professional
+            services is subject to CPA confidentiality obligations under applicable
+            federal and state law and the AICPA Code of Professional Conduct. This
+            website privacy policy supplements, and does not replace, those professional
+            obligations.
+          </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="mt-8 text-center">
+          <h3 class="text-xl font-semibold text-slate-900 mb-3">
+            Questions About This Policy?
+          </h3>
+          <div class="text-slate-600 mb-6 space-y-1">
+            <p class="font-medium">{firmName}</p>
+            <p>PO Box 133 · 1254 US Hwy 62 W</p>
+            <p>Greenville, KY 42345</p>
+            <p>
+              <a href="tel:2703389290" class="hover:text-blue-600 transition">
+                270-338-9290
+              </a>
+            </p>
+            <p>
+              <a
+                href="mailto:info@sullivancurry.com"
+                class="text-blue-600 hover:underline"
+              >
+                info@sullivancurry.com
+              </a>
+            </p>
+          </div>
+          <a
+            href={contactUrl}
+            class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-medium"
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
